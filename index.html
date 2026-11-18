@@ -439,6 +439,9 @@
   .faq summary::after { content: '+'; color: var(--rust); font-size: 1.4rem; font-weight: 300; flex-shrink: 0; }
   .faq details[open] summary::after { content: '−'; }
   .faq .a { padding: 0 0 22px; font-size: 0.95rem; font-weight: 300; color: var(--muted); line-height: 1.8; }
+  .reply-note { margin-top: 16px; font-size: 0.85rem; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+  .reply-note::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #1FAF54; flex-shrink: 0; }
+  .reply-note-dark { justify-content: center; color: rgba(253,252,250,0.55); margin: 18px 0 28px; }
   .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 90; display: inline-flex; align-items: center; gap: 10px; background: #1FAF54; color: #fff; text-decoration: none; font-size: 0.92rem; font-weight: 500; padding: 14px 20px; border-radius: 99px; box-shadow: 0 8px 24px rgba(0,0,0,0.22); }
   .wa-float:hover { background: #179446; }
   @media (max-width: 900px) {
@@ -666,12 +669,12 @@
       <a href="#" class="nav-link" onclick="showPage('longevus'); return false;">Longevus <span class="nav-link-badge">Programa</span></a>
       <a href="#" class="nav-link" onclick="showPage('blog'); return false;">Blog</a>
       <a href="#" class="nav-link" onclick="showPage('home'); scrollToId('sobre'); return false;">Sobre</a>
-      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="nav-link only-mobile">Agendar avaliação</a>
+      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="nav-link only-mobile">Fale comigo</a>
     </nav>
   </div>
   <div style="display:flex;align-items:center;gap:12px;">
     <a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="nav-aluno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>Área do aluno</span></a>
-    <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="nav-cta">Agendar avaliação</a>
+    <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="nav-cta">Fale comigo</a>
     <div class="mobile-menu-btn" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
@@ -691,9 +694,10 @@
       Treinamento neurofuncional para adultos <strong>50+</strong>, com método científico, abordagem clínica e acompanhamento individualizado. Para quem quer envelhecer com <strong>segurança, dignidade e independência</strong>.
     </p>
     <div class="hero-actions">
-      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary">Agendar minha avaliação física</a>
+      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20começar%20a%20treinar%20com%20você." target="_blank" class="btn-primary">Quero começar</a>
       <a href="#" onclick="scrollToId('como-funciona'); return false;" class="btn-secondary">Como funciona</a>
     </div>
+    <p class="reply-note">Respondo pessoalmente pelo WhatsApp.</p>
     <div class="hero-stats">
       <div><span class="stat-num">15+</span><span class="stat-label">Anos de experiência</span></div>
       <div><span class="stat-num">50+</span><span class="stat-label">Especialidade</span></div>
@@ -738,7 +742,7 @@
       <div class="step"><div class="step-num">02</div><div><strong>Seu plano</strong><p>Monto um programa feito para o seu corpo e a sua rotina, e definimos juntos o melhor formato de acompanhamento.</p></div></div>
       <div class="step"><div class="step-num">03</div><div><strong>Acompanhamento e evolução</strong><p>Treinos com supervisão, programa no app e reavaliações para você ver o quanto evoluiu.</p></div></div>
     </div>
-    <div class="reveal" style="margin-top:32px;"><a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary" style="display:inline-block;max-width:360px;width:100%;">Agendar minha avaliação física</a>
+    <div class="reveal" style="margin-top:32px;"><a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary" style="display:inline-block;max-width:360px;width:100%;">Agendar minha avaliação</a>
     <p class="price-note" style="color:var(--muted);margin-top:12px;">Sem compromisso com continuidade.</p></div>
   </div>
 </section>
@@ -754,14 +758,14 @@
         <span class="srv-tag">Presencial</span>
         <h3>Personal presencial</h3>
         <p>Treinos 2 ou 3 vezes por semana com acompanhamento em cada sessão. Na academia, no seu condomínio ou em casa.</p>
-        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20personal%20presencial." target="_blank" class="srv-link">Começar pela avaliação →</a>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20personal%20presencial." target="_blank" class="srv-link">Quero o presencial →</a>
       </div>
       <div class="srv-card">
         <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9.5 20v-5.5h5V20"/></svg></span>
         <span class="srv-tag">Programa</span>
         <h3>Longevus Híbrido</h3>
         <p>Encontros presenciais comigo e, nos outros dias, um programa estruturado para fazer em casa pelo app.</p>
-        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20Longevus%20Híbrido." target="_blank" class="srv-link">Começar pela avaliação →</a>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20Longevus%20Híbrido." target="_blank" class="srv-link">Quero o Híbrido →</a>
         <a href="#" onclick="showPage('longevus'); return false;" class="srv-gift">Conhecer o programa</a>
       </div>
       <div class="srv-card">
@@ -769,7 +773,7 @@
         <span class="srv-tag">Online</span>
         <h3>Consultoria online</h3>
         <p>Programa individual no app, com suporte direto comigo. Para quem está em outra cidade ou prefere treinar no próprio ritmo.</p>
-        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20consultoria%20online." target="_blank" class="srv-link">Começar pela avaliação →</a>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20na%20consultoria%20online." target="_blank" class="srv-link">Quero a consultoria →</a>
       </div>
     </div>
   </div>
@@ -848,8 +852,9 @@
 <!-- FINAL CTA -->
 <section class="final-cta">
   <h2 class="final-cta-title reveal">Seu próximo passo<br>começa <em>agora</em></h2>
-  <p class="final-cta-sub reveal">Comece pela avaliação física, sem compromisso com continuidade. Uma conversa basta para saber se faz sentido para você.</p>
-  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary reveal">Agendar minha avaliação física</a>
+  <p class="final-cta-sub reveal">Me conta o seu momento e o que você busca. Uma conversa basta para saber se faz sentido para você.</p>
+  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20seu%20trabalho." target="_blank" class="btn-primary reveal">Falar com o Wellington</a>
+  <p class="reply-note reply-note-dark">Respondo pessoalmente pelo WhatsApp.</p>
   <div class="whatsapp-row reveal">
     <a href="https://wa.me/5511977431011" target="_blank" class="wbtn">
       <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1711,6 +1716,6 @@ window.addEventListener('popstate', (e) => {
 var hash = location.hash.replace('#', '');
 if (hash && (['home','longevus','blog'].includes(hash) || document.getElementById('page-' + hash))) showPage(hash);
 </script>
-<a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="wa-float" aria-label="Agendar avaliação pelo WhatsApp"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Agendar avaliação</span></a>
+<a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="wa-float" aria-label="Tirar minhas dúvidas pelo WhatsApp"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Tirar minhas dúvidas</span></a>
 </body>
 </html>
