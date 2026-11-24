@@ -23,23 +23,9 @@
 <meta name="twitter:description" content="Treino curto em casa e desafio para a memória, todo dia. Primeiro mês R$ 49,90.">
 <meta name="twitter:image" content="https://britowellington.github.io/personal-longevus/wellington-foto.jpg">
 
-<!-- ── META PIXEL ──
-     Cole o ID do seu Pixel no lugar de COLE_SEU_PIXEL_ID (só números).
-     Enquanto o ID não for colado, nada é carregado. -->
-<script>
-  window.META_PIXEL_ID = 'COLE_SEU_PIXEL_ID';
-  if (/^\d+$/.test(window.META_PIXEL_ID)) {
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', window.META_PIXEL_ID);
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent', { content_name: 'Elo 60+', content_category: 'Programa online', value: 49.90, currency: 'BRL' });
-  }
-  window.track = function(ev, data){ try { if (window.fbq) fbq('track', ev, data || {}); } catch(e){} };
-</script>
+<!-- ── META PIXEL ── o ID fica no arquivo pixel.js -->
+<script src="pixel.js"></script>
+<script>if (window.fbq) fbq('track', 'ViewContent', { content_name: 'Elo 60+', content_category: 'Programa online', value: 49.90, currency: 'BRL' });</script>
 
 <!-- ── DADOS ESTRUTURADOS (Google e buscas por IA) ── -->
 <script type="application/ld+json">

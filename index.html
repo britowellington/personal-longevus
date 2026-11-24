@@ -23,21 +23,8 @@
 <meta name="twitter:description" content="Personal Longevus: treinamento para adultos 50+ em São Bernardo do Campo. Envelheça com autonomia, segurança e independência.">
 <meta name="twitter:image" content="https://britowellington.github.io/personal-longevus/wellington-foto.jpg">
 
-<!-- ── META PIXEL ──
-     Cole o ID do seu Pixel no lugar de COLE_SEU_PIXEL_ID (só números), igual ao elo60.html.
-     Enquanto o ID não for colado, nada é carregado. -->
-<script>
-  window.META_PIXEL_ID = 'COLE_SEU_PIXEL_ID';
-  if (/^\d+$/.test(window.META_PIXEL_ID)) {
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', window.META_PIXEL_ID);
-    fbq('track', 'PageView');
-  }
-</script>
+<!-- ── META PIXEL ── o ID fica no arquivo pixel.js (vale para o site inteiro) -->
+<script src="pixel.js"></script>
 
 <!-- ── SEO: Robots e geolocalização ── -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -598,10 +585,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "@id": "https://britowellington.github.io/personal-longevus/#blog",
+  "@id": "https://britowellington.github.io/personal-longevus/blog/#blog",
   "name": "Blog Wellington Brito · Envelhecimento Ativo e Treinamento 50+",
   "description": "Artigos sobre treinamento neurofuncional, longevidade ativa e saúde do adulto acima de 50 anos.",
-  "url": "https://britowellington.github.io/personal-longevus/#blog",
+  "url": "https://britowellington.github.io/personal-longevus/blog/",
   "inLanguage": "pt-BR",
   "blogPost": [
     {
@@ -609,7 +596,7 @@
       "headline": "Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito",
       "description": "As quedas são uma das principais causas de hospitalização e perda de autonomia em pessoas acima de 60 anos. A boa notícia: a maioria pode ser evitada.",
       "articleSection": "Equilíbrio e Prevenção",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-quedas",
+      "url": "https://britowellington.github.io/personal-longevus/blog/prevencao-de-quedas-depois-dos-60.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -626,7 +613,7 @@
       "headline": "Como o exercício físico protege a memória: o que a ciência já comprovou",
       "description": "O exercício não fortalece só os músculos. Ele é um dos mais potentes protetores do cérebro que conhecemos, e os efeitos sobre a memória são mensuráveis.",
       "articleSection": "Neurociência",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-memoria",
+      "url": "https://britowellington.github.io/personal-longevus/blog/exercicio-fisico-e-memoria.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -643,7 +630,7 @@
       "headline": "5 exercícios seguros para fazer em casa depois dos 50 sem equipamento",
       "description": "Você não precisa de academia nem de equipamentos para começar a fortalecer o corpo. Estes cinco movimentos trabalham força, equilíbrio e coordenação com segurança.",
       "articleSection": "Treino em Casa",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-casa",
+      "url": "https://britowellington.github.io/personal-longevus/blog/exercicios-em-casa-depois-dos-50.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -660,7 +647,7 @@
       "headline": "Artrose, hipertensão e diabetes: quando e como treinar com segurança",
       "description": "Ter uma condição crônica não é motivo para parar de se exercitar. É motivo para se exercitar do jeito certo, com prescrição adequada ao seu quadro.",
       "articleSection": "Saúde e Dor Crônica",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-comorbidades",
+      "url": "https://britowellington.github.io/personal-longevus/blog/artrose-hipertensao-diabetes-como-treinar.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -677,7 +664,7 @@
       "headline": "Sarcopenia: a perda muscular silenciosa que rouba sua autonomia",
       "description": "A partir dos 50 anos, perdemos massa muscular de forma progressiva. Entender esse processo e agir sobre ele é uma das chaves para envelhecer com independência.",
       "articleSection": "Força e Longevidade",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-sarcopenia",
+      "url": "https://britowellington.github.io/personal-longevus/blog/sarcopenia-perda-muscular.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -694,7 +681,7 @@
       "headline": "Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência",
       "description": "A falta de consistência raramente é preguiça. Quase sempre é falta de método, de adaptação e de um motivo forte o suficiente. Vamos falar honestamente sobre isso.",
       "articleSection": "Comportamento e Hábitos",
-      "url": "https://britowellington.github.io/personal-longevus/#artigo-consistencia",
+      "url": "https://britowellington.github.io/personal-longevus/blog/como-manter-consistencia-no-treino-50-mais.html",
       "author": {
         "@type": "Person",
         "name": "Wellington Brito"
@@ -719,7 +706,7 @@
     <nav class="nav-links" id="nav-links">
       <a href="#" class="nav-link active" onclick="showPage('home'); return false;">Início</a>
       <a href="#" class="nav-link" onclick="showPage('longevus'); return false;">Longevus <span class="nav-link-badge">Programa</span></a>
-      <a href="#" class="nav-link" onclick="showPage('blog'); return false;">Blog</a>
+      <a href="blog/" class="nav-link">Blog</a>
       <a href="#" class="nav-link" onclick="showPage('home'); scrollToId('sobre'); return false;">Sobre</a>
       <a href="elo60.html" class="nav-link">Elo 60+ <span class="nav-link-badge">Online</span></a>
       <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="nav-link only-mobile">Fale comigo</a>
@@ -934,7 +921,7 @@
     <div class="footer-links">
       <a href="#" onclick="showPage('home'); return false;">Início</a>
       <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+      <a href="blog/">Blog</a>
     </div>
   </div>
   <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
@@ -1144,7 +1131,7 @@
     <div class="footer-links">
       <a href="#" onclick="showPage('home'); return false;">Início</a>
       <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+      <a href="blog/">Blog</a>
     </div>
   </div>
   <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
@@ -1152,580 +1139,7 @@
 
 </div><!-- /page-longevus -->
 
-<!-- ══════════════════════════════════════ -->
-<!--  PÁGINA BLOG                          -->
-<!-- ══════════════════════════════════════ -->
-<div class="page" id="page-blog">
 
-<div class="blog-hero">
-  <div class="blog-hero-inner">
-    <span class="s-label">Conteúdo gratuito</span>
-    <h1 class="s-title" style="font-size:clamp(2.8rem,5vw,4.2rem);">Envelhecer bem<br>começa com <em>informação</em></h1>
-    <p class="s-body" style="max-width:480px;margin-top:12px;">Artigos sobre treinamento neurofuncional, longevidade ativa, saúde do adulto 50+ e tudo que você precisa saber para envelhecer com autonomia.</p>
-  </div>
-</div>
-
-<section style="padding:0; background:var(--white);">
-  <div class="blog-grid">
-    <a href="#" onclick="showPage('artigo-quedas'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Equilíbrio e Prevenção</span>
-        <h3>Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito</h3>
-        <p>As quedas são a principal causa de hospitalização em idosos. Entenda a fisiologia por trás disso e os exercícios que realmente funcionam para prevenir.</p>
-        <div class="blog-meta"><span class="blog-read">8 min de leitura</span></div>
-      </div>
-    </a>
-    <a href="#" onclick="showPage('artigo-memoria'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Neurociência</span>
-        <h3>Como o exercício físico protege a memória: o que a ciência já comprovou</h3>
-        <p>Estudos mostram que o exercício é um dos mais potentes neuroprotetores disponíveis. Veja quais tipos de treino têm maior impacto cognitivo depois dos 50.</p>
-        <div class="blog-meta"><span class="blog-read">10 min de leitura</span></div>
-      </div>
-    </a>
-    <a href="#" onclick="showPage('artigo-casa'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9.5 20v-5.5h5V20"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Treino em Casa</span>
-        <h3>5 exercícios seguros para fazer em casa depois dos 50 sem equipamento</h3>
-        <p>Sem precisar de academia ou equipamentos, esses movimentos trabalham força, equilíbrio e coordenação, adaptados para quem tem comorbidades.</p>
-        <div class="blog-meta"><span class="blog-read">6 min de leitura</span></div>
-      </div>
-    </a>
-    <a href="#" onclick="showPage('artigo-comorbidades'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0112 7a3.5 3.5 0 017 3.5c0 5-7 9.5-7 9.5z"/><path d="M5 12h3l1.5-3 2 5 1.5-2h6"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Saúde e Dor Crônica</span>
-        <h3>Artrose, hipertensão e diabetes: quando e como treinar com segurança</h3>
-        <p>Ter comorbidades não é motivo para não se exercitar. É motivo para se exercitar com prescrição adequada. Entenda as diretrizes atuais para cada condição.</p>
-        <div class="blog-meta"><span class="blog-read">12 min de leitura</span></div>
-      </div>
-    </a>
-    <a href="#" onclick="showPage('artigo-sarcopenia'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7v10"/><path d="M17.5 7v10"/><line x1="6.5" y1="12" x2="17.5" y2="12"/><path d="M3.5 9.5v5"/><path d="M20.5 9.5v5"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Força e Longevidade</span>
-        <h3>Sarcopenia: a perda muscular silenciosa que rouba sua autonomia</h3>
-        <p>A partir dos 50 anos, podemos perder até 1% de massa muscular por ano. Saiba o que é sarcopenia, por que isso importa e como reverter o processo.</p>
-        <div class="blog-meta"><span class="blog-read">9 min de leitura</span></div>
-      </div>
-    </a>
-    <a href="#" onclick="showPage('artigo-consistencia'); return false;" class="blog-card">
-      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="1.5"/><path d="M9 4V3a3 3 0 016 0v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></div></div>
-      <div class="blog-card-body">
-        <span class="blog-cat">Comportamento e Hábitos</span>
-        <h3>Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência</h3>
-        <p>A falta de consistência raramente é preguiça. É falta de método. Entenda os fatores psicológicos e fisiológicos que determinam a aderência ao exercício nessa fase da vida.</p>
-        <div class="blog-meta"><span class="blog-read">7 min de leitura</span></div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<div class="blog-cta">
-  <span class="s-label" style="color:var(--rust-light);">Quer receber conteúdo novo?</span>
-  <h2 class="s-title" style="color:var(--white);font-size:2.4rem;">Receba artigos diretamente<br>no seu <em style="color:var(--rust-light);">WhatsApp</em></h2>
-  <p>Sem spam. Apenas conteúdo útil sobre envelhecimento ativo, treinamento funcional e saúde do adulto 50+, publicado com regularidade.</p>
-  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Gostaria%20de%20receber%20seus%20artigos%20sobre%20treino%20para%20adultos%2050%2B." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:360px;">Quero receber os artigos</a>
-</div>
-
-<footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-
-</div><!-- /page-blog -->
-
-
-<!-- ARTIGO: quedas -->
-<div class="page" id="page-artigo-quedas">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Equilíbrio e Prevenção</span>
-        <h1 class="article-title">Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito</h1>
-        <p class="article-sub">As quedas são uma das principais causas de hospitalização e perda de autonomia em pessoas acima de 60 anos. A boa notícia: a maioria pode ser evitada.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">8 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>Toda semana eu converso com alguém que me diz a mesma frase: "Wellington, eu nunca caí, mas ando com medo de cair." Esse medo não é bobagem. Ele tem fundamento fisiológico, e ignorá-lo é um erro. Mas viver refém dele também é.</p>
-
-<p>Depois de mais de 15 anos trabalhando com adultos acima de 50 anos, aprendi que a queda quase nunca é um acidente isolado. Ela é o ponto final de um processo que vinha acontecendo silenciosamente, às vezes por anos. E é exatamente por isso que ela pode ser prevenida.</p>
-
-<h2>O que realmente acontece com o corpo</h2>
-
-<p>A partir dos 60 anos, três sistemas que nos mantêm de pé começam a perder eficiência ao mesmo tempo: a força muscular (principalmente das pernas), o equilíbrio e a velocidade de reação. Quando você tropeça aos 30 anos, seu corpo corrige a postura numa fração de segundo. Aos 65, essa correção é mais lenta, e a força para se segurar pode não estar mais lá.</p>
-
-<p>Os dados confirmam a gravidade do problema. As quedas estão entre as principais causas de internação hospitalar na população idosa, e o preditor mais consistente de uma queda futura é, justamente, uma queda anterior. Ou seja: a primeira queda aumenta drasticamente o risco da segunda. Por isso a prevenção precisa começar antes da primeira acontecer.</p>
-
-<h2>A maioria das quedas acontece dentro de casa</h2>
-
-<p>Isso surpreende muita gente, mas faz todo sentido. É em casa que passamos a maior parte do tempo e onde baixamos a guarda. Tapetes soltos, iluminação fraca, falta de barras de apoio no banheiro e fios pelo chão são responsáveis por uma parcela enorme dos acidentes.</p>
-
-<p>A primeira coisa que eu sempre oriento é fazer um pente-fino na casa: prender ou remover tapetes, melhorar a iluminação dos corredores e da escada, instalar barras de apoio no banheiro e manter os caminhos livres. É barato, é rápido e elimina boa parte do risco imediato.</p>
-
-<h2>Mas o ambiente seguro não basta</h2>
-
-<p>Organizar a casa reduz o risco, mas não ataca a causa de fundo: o corpo que perdeu força e equilíbrio. É aqui que o treinamento entra, e a ciência é muito clara sobre isso. Programas de exercício que combinam fortalecimento das pernas e treino de equilíbrio reduzem significativamente o número de quedas. Não é opinião, é resultado de ensaios clínicos.</p>
-
-<p>O que funciona, na prática, é trabalhar:</p>
-
-<ul>
-<li><strong>Força de membros inferiores:</strong> exercícios como levantar e sentar da cadeira, agachamentos adaptados e subir degraus fortalecem exatamente a musculatura que segura o corpo numa pisada em falso.</li>
-<li><strong>Equilíbrio estático e dinâmico:</strong> ficar em apoio unipodal (um pé só) com segurança, caminhar em linha, mudar de direção. São estímulos que reeducam o sistema de equilíbrio.</li>
-<li><strong>Velocidade de reação:</strong> exercícios que desafiam o corpo a responder rápido a um estímulo, sempre dentro de um ambiente controlado e seguro.</li>
-</ul>
-
-<h2>O papel do estímulo cognitivo</h2>
-
-<p>Um ponto que poucos consideram: muitas quedas acontecem quando a pessoa está fazendo duas coisas ao mesmo tempo, como caminhar e conversar, ou andar enquanto pensa em outra coisa. Isso se chama dupla tarefa, e treinar o corpo e a mente juntos melhora a capacidade de manter o equilíbrio mesmo distraído. É um dos pilares do trabalho neurofuncional que aplico com meus alunos.</p>
-
-<h2>Nunca é tarde para começar</h2>
-
-<p>Se tem uma mensagem que eu gostaria que você levasse deste texto é esta: a perda de força e equilíbrio não é uma sentença. O corpo responde ao estímulo em qualquer idade. Já acompanhei alunos na faixa dos 70 anos que recuperaram a confiança de subir escada, carregar o neto e sair de casa sem medo. O caminho é treino com método, progressão segura e acompanhamento de quem entende do perfil de cada um.</p>
-
-<p>O medo de cair não precisa governar a sua vida. Ele pode ser, na verdade, o sinal de alerta que te leva a agir antes que o pior aconteça.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Por%20que%20o%20risco%20de%20queda%20aumenta%20ap%C3%B3s%20os%2060%20anos%20e%20o%20que%20fazer%20a%20respeito%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-quedas -->
-
-<!-- ARTIGO: memoria -->
-<div class="page" id="page-artigo-memoria">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Neurociência</span>
-        <h1 class="article-title">Como o exercício físico protege a memória: o que a ciência já comprovou</h1>
-        <p class="article-sub">O exercício não fortalece só os músculos. Ele é um dos mais potentes protetores do cérebro que conhecemos, e os efeitos sobre a memória são mensuráveis.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">10 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>Quando explico para um aluno que o treino que fazemos também está cuidando da memória dele, costumo ver um misto de surpresa e desconfiança. Parece bom demais para ser verdade. Mas é verdade, e a ciência sustenta isso de forma cada vez mais sólida.</p>
-
-<p>Durante muito tempo se acreditou que o cérebro adulto era uma estrutura fixa, que só perdia neurônios com o passar dos anos. Hoje sabemos que isso está errado. O cérebro continua se modificando, criando novas conexões e até gerando novos neurônios ao longo da vida. E um dos principais gatilhos desse processo é o movimento.</p>
-
-<h2>O elo entre as pernas e o cérebro</h2>
-
-<p>Existe uma região do cérebro chamada hipocampo, profundamente envolvida na formação de memórias e no aprendizado. É uma das primeiras áreas afetadas no envelhecimento e em doenças como o Alzheimer. O que os estudos de neuroimagem vêm mostrando é notável: pessoas que se exercitam regularmente apresentam maior volume do hipocampo do que pessoas sedentárias da mesma idade.</p>
-
-<p>Em outras palavras, o exercício parece literalmente preservar a estrutura física da região responsável pela sua memória. Revisões de estudos recentes com idosos mostram aumento do volume hipocampal, melhor integração das conexões neurais e maior metabolismo nas regiões cognitivas após programas de exercício.</p>
-
-<h2>Por que isso acontece</h2>
-
-<p>O mecanismo mais estudado envolve uma molécula chamada BDNF, um fator que estimula o crescimento e a sobrevivência dos neurônios. Pense nele como um adubo para o cérebro. Quando nos exercitamos, os níveis de BDNF aumentam, favorecendo a neuroplasticidade, que é a capacidade do cérebro de se reorganizar e formar novas conexões.</p>
-
-<p>Além disso, o exercício melhora a circulação sanguínea cerebral, reduz a inflamação crônica e ajuda a regular o sono, três fatores que têm impacto direto na saúde cognitiva.</p>
-
-<h2>Que tipo de exercício funciona melhor</h2>
-
-<p>Essa é a pergunta que sempre recebo, e a resposta agrada: os dois principais tipos de treino ajudam, e juntos funcionam ainda melhor.</p>
-
-<ul>
-<li><strong>Exercício aeróbico</strong> (caminhada vigorosa, bicicleta, natação) tem efeito consistente sobre memória e atenção. Os estudos sugerem que o benefício é dose-dependente, ou seja, quanto mais regular a prática, maior o efeito, dentro de limites saudáveis.</li>
-<li><strong>Treinamento de força</strong> complementa esses benefícios. Pesquisas recentes mostram que o treino resistido também impacta positivamente as regiões do cérebro ligadas à cognição, especialmente em pessoas com risco de comprometimento cognitivo.</li>
-</ul>
-
-<p>Há ainda uma recomendação geral de algo em torno de 120 a 150 minutos de exercício moderado por semana para benefícios cognitivos, embora cada pessoa precise de uma dose ajustada ao seu perfil.</p>
-
-<h2>O diferencial do trabalho neurofuncional</h2>
-
-<p>No meu trabalho, eu vou um passo além do exercício tradicional. Combino o estímulo físico com desafios cognitivos durante o próprio treino: memória de trabalho, atenção dividida, tempo de reação. Quando você precisa coordenar um movimento enquanto resolve um pequeno desafio mental, está treinando corpo e cérebro de forma integrada, exatamente como eles funcionam na vida real.</p>
-
-<p>Essa abordagem potencializa os ganhos cognitivos porque não trabalha o cérebro como um espectador do exercício, mas como participante ativo dele.</p>
-
-<h2>A mensagem que importa</h2>
-
-<p>Cuidar do corpo depois dos 50 nunca foi só uma questão de estética ou de força. É uma das decisões mais inteligentes que você pode tomar pela sua mente. Cada sessão de treino é um depósito na sua reserva cognitiva, um investimento na sua capacidade de continuar lúcido, independente e presente nos anos que virão.</p>
-
-<p>Não existe pílula que faça pelo seu cérebro o que o movimento faz. E nunca é tarde para começar.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Como%20o%20exerc%C3%ADcio%20f%C3%ADsico%20protege%20a%20mem%C3%B3ria%3A%20o%20que%20a%20ci%C3%AAncia%20j%C3%A1%20comprovou%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-memoria -->
-
-<!-- ARTIGO: casa -->
-<div class="page" id="page-artigo-casa">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Treino em Casa</span>
-        <h1 class="article-title">5 exercícios seguros para fazer em casa depois dos 50 sem equipamento</h1>
-        <p class="article-sub">Você não precisa de academia nem de equipamentos para começar a fortalecer o corpo. Estes cinco movimentos trabalham força, equilíbrio e coordenação com segurança.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">6 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>Uma das coisas que mais ouço é: "Wellington, eu não tenho tempo de ir à academia todo dia." E está tudo bem. A verdade é que boa parte do trabalho que protege a sua autonomia pode ser feita em casa, com o próprio peso do corpo e alguns minutos por dia.</p>
-
-<p>Antes de listar os exercícios, um aviso importante: o que vou descrever aqui são movimentos de baixo risco para a maioria das pessoas, mas cada corpo é único. Se você tem alguma condição clínica, dor ativa ou limitação, o ideal é ter uma avaliação profissional antes de começar. Considere isto um ponto de partida, não uma prescrição individual.</p>
-
-<h2>1. Levantar e sentar da cadeira</h2>
-
-<p>Esse é, talvez, o exercício mais importante desta lista. Sente-se numa cadeira firme e levante-se sem usar as mãos, se conseguir. Depois sente de volta, controlando a descida. Esse movimento fortalece exatamente a musculatura das pernas que você usa para se levantar do sofá, do vaso sanitário e do carro.</p>
-
-<p>Comece com 2 séries de 8 a 10 repetições. Se precisar usar as mãos no apoio no início, tudo bem, o importante é a constância. Mantenha uma cadeira ou parede por perto para segurança.</p>
-
-<h2>2. Apoio em um pé só (equilíbrio)</h2>
-
-<p>Fique de pé atrás de uma cadeira, segurando o encosto. Levante levemente um pé do chão e tente se equilibrar no outro por alguns segundos. Troque de perna. Esse exercício reeduca o seu sistema de equilíbrio, que é uma das principais defesas contra quedas.</p>
-
-<p>Comece segurando firme na cadeira. Com o tempo, tente apenas encostar os dedos. O objetivo, lá na frente, é conseguir se equilibrar com segurança sem apoio, mas sempre com algo por perto.</p>
-
-<h2>3. Elevação de panturrilha</h2>
-
-<p>De pé, apoiando as mãos numa cadeira ou bancada, fique na ponta dos pés e desça devagar. As panturrilhas são fundamentais para a marcha e para o impulso ao caminhar, e costumam ser esquecidas. Faça 2 séries de 10 a 12 repetições.</p>
-
-<h2>4. Marcha estacionária</h2>
-
-<p>Em pé, num lugar seguro, simule uma caminhada erguendo os joelhos alternadamente, como se marchasse no lugar. Esse exercício trabalha coordenação, ativa o coração e estimula o equilíbrio dinâmico. Se sentir segurança, pode soltar o apoio. Faça por 30 a 60 segundos, descanse, e repita.</p>
-
-<h2>5. Movimento de alcançar (mobilidade)</h2>
-
-<p>Sentado ou em pé com apoio, estenda os braços para frente, para os lados e para cima, como se fosse pegar algo numa prateleira alta. Esse trabalho mantém a mobilidade dos ombros e a amplitude de movimento que você usa para se vestir, pentear o cabelo e pegar objetos no alto.</p>
-
-<h2>Como montar sua rotina</h2>
-
-<p>Não tente fazer tudo de forma intensa no primeiro dia. O segredo do treino para a nossa faixa não é intensidade, é consistência e progressão. Comece devagar, 3 vezes por semana, e vá aumentando à medida que o corpo responde.</p>
-
-<p>Um detalhe que faz diferença: faça os exercícios com atenção plena no movimento, sem pressa. Qualidade vale muito mais do que quantidade aqui.</p>
-
-<h2>Quando buscar acompanhamento</h2>
-
-<p>Esses exercícios são um excelente começo, mas eles são genéricos por natureza, foram pensados para "a maioria das pessoas". O seu corpo, com a sua história, as suas dores e os seus objetivos, merece um programa feito para ele. É exatamente isso que faço no acompanhamento individual e no programa Longevus: transformo princípios gerais como esses em um protocolo seguro e progressivo, desenhado para você.</p>
-
-<p>Mas se hoje o que você consegue fazer é começar por aqui, comece. Seu corpo daqui a seis meses vai agradecer.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%225%20exerc%C3%ADcios%20seguros%20para%20fazer%20em%20casa%20depois%20dos%2050%20sem%20equipamento%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-casa -->
-
-<!-- ARTIGO: comorbidades -->
-<div class="page" id="page-artigo-comorbidades">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Saúde e Dor Crônica</span>
-        <h1 class="article-title">Artrose, hipertensão e diabetes: quando e como treinar com segurança</h1>
-        <p class="article-sub">Ter uma condição crônica não é motivo para parar de se exercitar. É motivo para se exercitar do jeito certo, com prescrição adequada ao seu quadro.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">12 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>"Wellington, mas eu posso treinar mesmo com a minha pressão alta?" Essa é provavelmente a pergunta que mais escuto. E a resposta, na imensa maioria dos casos, é não apenas que pode, mas que deve, desde que seja com orientação adequada.</p>
-
-<p>Existe um mito perigoso de que, depois de certa idade ou com certas condições, o melhor é "pegar leve" e evitar esforço. Na prática, o sedentarismo costuma ser mais perigoso do que o exercício bem prescrito. O que muda não é "se" você deve se exercitar, mas "como".</p>
-
-<h2>Artrose: movimento é remédio</h2>
-
-<p>Parece contraintuitivo, mas a artrose melhora com movimento adequado, não com repouso. A articulação que não se move enfraquece a musculatura ao redor, e é justamente essa musculatura que protege e estabiliza a articulação. O resultado do repouso prolongado costuma ser mais dor, não menos.</p>
-
-<p>O caminho aqui é o fortalecimento da musculatura que envolve a articulação afetada, respeitando a dor e evitando o impacto excessivo. Para um joelho com artrose, por exemplo, fortalecer a coxa de forma controlada costuma trazer alívio significativo. O segredo é a dosagem certa: estímulo suficiente para fortalecer, sem sobrecarregar a articulação já sensível.</p>
-
-<h2>Hipertensão: o exercício como aliado da pressão</h2>
-
-<p>O exercício regular é uma das ferramentas mais eficazes para o controle da pressão arterial. A atividade física ajuda a manter os vasos mais saudáveis e contribui para reduzir os níveis de pressão ao longo do tempo.</p>
-
-<p>Os cuidados existem e são importantes: evitar prender a respiração durante o esforço (uma manobra que eleva a pressão de forma abrupta), priorizar uma progressão gradual e monitorar como o corpo responde. Quem tem hipertensão se beneficia muito de um trabalho que combina exercício aeróbico e fortalecimento, mas a intensidade precisa ser calibrada individualmente. Por isso eu sempre quero saber quais medicamentos a pessoa usa e como está o controle da pressão antes de montar o programa.</p>
-
-<h2>Diabetes: o músculo que regula o açúcar</h2>
-
-<p>Poucas pessoas sabem disso, mas o músculo é um dos principais consumidores de glicose do corpo. Quando você se exercita, a musculatura capta açúcar do sangue, ajudando a controlar a glicemia. Por isso o exercício é parte central do manejo do diabetes tipo 2.</p>
-
-<p>O fortalecimento muscular tem um papel especial aqui: mais massa muscular significa mais capacidade de regular o açúcar no sangue ao longo do dia. Combinado com atividade aeróbica, o efeito é ainda melhor. Os cuidados envolvem atenção a episódios de hipoglicemia, hidratação e atenção especial aos pés, que merecem cuidado redobrado em quem tem diabetes.</p>
-
-<h2>O ponto em comum: prescrição individual</h2>
-
-<p>Você deve ter percebido um padrão nos três casos: o exercício ajuda, mas a forma certa de fazê-lo depende do seu quadro específico. Não existe receita única. A pessoa com artrose no joelho, hipertensão controlada e princípio de diabetes precisa de um programa que considere as três coisas ao mesmo tempo, e isso é exatamente o oposto do treino genérico de academia.</p>
-
-<p>É por isso que, no meu trabalho, a primeira etapa é sempre uma avaliação detalhada: histórico de saúde, condições clínicas, medicamentos em uso, limitações e objetivos. Sem essa base, qualquer programa é um chute, e chute com o corpo de alguém é coisa que eu não faço.</p>
-
-<h2>Uma palavra sobre segurança</h2>
-
-<p>Se você tem alguma condição crônica, dois cuidados são inegociáveis. Primeiro: tenha acompanhamento médico em dia e, idealmente, a liberação do seu médico para iniciar um programa de exercícios. Segundo: treine com quem entende de prescrição para o seu perfil, e não apenas de treino genérico.</p>
-
-<p>A combinação certa, profissional de saúde acompanhando a condição e profissional de exercício prescrevendo o treino certo, é o que transforma uma condição crônica de obstáculo em algo perfeitamente administrável. Já vi muita gente recuperar qualidade de vida que achava perdida, simplesmente porque parou de ter medo de se mexer e começou a se mexer do jeito certo.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Artrose%2C%20hipertens%C3%A3o%20e%20diabetes%3A%20quando%20e%20como%20treinar%20com%20seguran%C3%A7a%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-comorbidades -->
-
-<!-- ARTIGO: sarcopenia -->
-<div class="page" id="page-artigo-sarcopenia">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Força e Longevidade</span>
-        <h1 class="article-title">Sarcopenia: a perda muscular silenciosa que rouba sua autonomia</h1>
-        <p class="article-sub">A partir dos 50 anos, perdemos massa muscular de forma progressiva. Entender esse processo e agir sobre ele é uma das chaves para envelhecer com independência.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">9 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>Tem uma perda que acontece tão devagar que quase ninguém percebe até ela cobrar a conta: a perda de massa e força muscular com o passar dos anos. O nome técnico é sarcopenia, e ela é uma das principais responsáveis pela perda de autonomia na terceira idade. A boa notícia é que ela responde muito bem ao tratamento certo.</p>
-
-<h2>O que é sarcopenia, na prática</h2>
-
-<p>Sarcopenia é a perda progressiva de massa muscular associada à diminuição da força e da capacidade de realizar movimentos do dia a dia. Não é só uma questão de "ficar mais magro" ou "mais fraco". É uma condição que aumenta o risco de quedas, fraturas, perda de independência e está associada a piora geral da saúde.</p>
-
-<p>Estima-se que a sarcopenia afete uma parcela significativa da população acima de 60 anos. E o mais importante de entender: normalmente a perda de força vem primeiro, seguida pela perda de massa muscular. Ou seja, quando você nota que está mais difícil abrir um pote ou levantar do chão, o processo já está em andamento.</p>
-
-<h2>A linha do tempo da perda</h2>
-
-<p>A força muscular atinge seu pico por volta dos 30 anos e se mantém razoavelmente preservada até os 50. A partir daí, começa um declínio que se acelera depois dos 60. Em algumas faixas etárias mais avançadas, a redução de força pode chegar a percentuais bastante expressivos.</p>
-
-<p>Parece assustador, mas aqui está o ponto que muda tudo: esse processo não é uma via de mão única. O corpo humano mantém a capacidade de ganhar força e massa muscular em qualquer idade, desde que receba o estímulo certo.</p>
-
-<h2>O que reverte o processo</h2>
-
-<p>Se existe um consenso na ciência sobre sarcopenia, é este: o treinamento de força (também chamado de exercício resistido) é a intervenção mais eficaz para prevenir e tratar a perda muscular. Revisões sistemáticas e meta-análises são consistentes nesse ponto.</p>
-
-<p>Os estudos mostram que idosos que fazem treino de força de forma regular apresentam melhora mensurável na força muscular, ganho de massa e melhor desempenho em testes funcionais, aqueles que medem coisas práticas como levantar de uma cadeira e velocidade de caminhada. Em muitos casos, os benefícios vão além do músculo: pesquisas observaram também redução de processos inflamatórios e melhora na qualidade do sono.</p>
-
-<h2>Como deve ser esse treino</h2>
-
-<p>Treino de força para quem tem ou quer prevenir sarcopenia não significa pegar peso pesado de qualquer jeito. Significa um trabalho progressivo e bem dosado. Nos estudos que mostram bons resultados, o padrão costuma ser:</p>
-
-<ul>
-<li>Frequência de cerca de 2 a 3 vezes por semana;</li>
-<li>Vários exercícios cobrindo os principais grupos musculares, com atenção especial às pernas;</li>
-<li>Progressão gradual da carga, começando leve e aumentando conforme o corpo se adapta;</li>
-<li>Execução controlada, com técnica correta, priorizando a segurança.</li>
-</ul>
-
-<p>A palavra-chave é progressão. O músculo só se fortalece se for desafiado de forma crescente, mas esse desafio precisa respeitar o ponto de partida de cada pessoa.</p>
-
-<h2>A nutrição também conta</h2>
-
-<p>Não dá para falar de sarcopenia sem mencionar a proteína. O músculo precisa de matéria-prima para se reconstruir, e muitos adultos mais velhos consomem proteína abaixo do ideal. O treino de força combinado com uma ingestão adequada de proteína é a dupla mais eficaz. A orientação nutricional específica deve vir de um nutricionista, mas é importante que você saiba que treino e alimentação andam juntos aqui.</p>
-
-<h2>Por que isso é uma questão de autonomia</h2>
-
-<p>No fim das contas, sarcopenia não é sobre estética. É sobre conseguir carregar as compras, brincar com os netos, levantar do chão sozinho, subir a escada de casa, viver sem depender dos outros para as tarefas básicas. A força muscular é, literalmente, a moeda da independência na terceira idade.</p>
-
-<p>Quando trabalho com um aluno, o objetivo nunca é "ficar forte" por vaidade. É preservar a capacidade de viver a vida do jeito dele, com dignidade e sem medo. E a ciência é clara: começar a treinar a força, mesmo depois dos 60, 70 anos, faz diferença real. O melhor momento para começar foi há vinte anos. O segundo melhor momento é hoje.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Sarcopenia%3A%20a%20perda%20muscular%20silenciosa%20que%20rouba%20sua%20autonomia%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-sarcopenia -->
-
-<!-- ARTIGO: consistencia -->
-<div class="page" id="page-artigo-consistencia">
-  <article class="article">
-    <div class="article-hero">
-      <div class="article-hero-inner">
-        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
-        <span class="article-cat">Comportamento e Hábitos</span>
-        <h1 class="article-title">Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência</h1>
-        <p class="article-sub">A falta de consistência raramente é preguiça. Quase sempre é falta de método, de adaptação e de um motivo forte o suficiente. Vamos falar honestamente sobre isso.</p>
-        <div class="article-meta">
-          <span class="article-author">Por Wellington Brito</span>
-          <span class="article-readtime">7 min de leitura</span>
-        </div>
-      </div>
-    </div>
-    <div class="article-body">
-      <p>Deixa eu começar com uma frase que costumo dizer logo na primeira conversa: o maior erro depois dos 50 não é a falta de treino. É treinar sem planejamento. E o segundo maior erro é desistir achando que o problema é você, quando na verdade o problema era o método.</p>
-
-<p>Ao longo dos anos, vi muita gente chegar até mim depois de várias tentativas frustradas de "voltar a se exercitar". Quase sempre carregando uma culpa: "eu não tenho disciplina", "eu sou preguiçoso", "eu começo e paro". Na imensa maioria das vezes, não era nada disso.</p>
-
-<h2>Por que as pessoas realmente abandonam</h2>
-
-<p>Quando investigo o histórico de quem desistiu, alguns padrões se repetem:</p>
-
-<ul>
-<li><strong>O treino era genérico demais.</strong> A pessoa entrou numa academia, recebeu uma ficha padrão pensada para alguém de 25 anos e, naturalmente, sentiu dor, desânimo ou simplesmente não viu sentido.</li>
-<li><strong>A intensidade foi errada.</strong> Ou pesado demais, gerando dor e medo, ou leve demais, sem gerar resultado nem motivação.</li>
-<li><strong>Faltou acompanhamento.</strong> Ninguém ajustou o programa, ninguém tirou dúvidas, ninguém celebrou os progressos. A pessoa ficou sozinha.</li>
-<li><strong>O objetivo não era claro.</strong> "Emagrecer" ou "ficar em forma" são metas vagas demais para sustentar a constância nos dias difíceis.</li>
-</ul>
-
-<p>Repare: nenhum desses motivos é "preguiça". São falhas de método e de abordagem. E todas têm solução.</p>
-
-<h2>O que a ciência diz sobre aderência</h2>
-
-<p>Há um achado importante nas pesquisas sobre exercício para idosos: a abordagem personalizada, mesmo quando feita em grupo, melhora muito a chance de a pessoa aderir e continuar no programa a longo prazo. Ou seja, quando o treino é pensado para o indivíduo, considerando seus valores, sua rotina e suas preferências, a probabilidade de manter aumenta significativamente.</p>
-
-<p>As pesquisas também mostram que muitos adultos mais velhos preferem exercícios que possam fazer em casa, com alguma orientação profissional. Forçar alguém para um modelo que não combina com a vida dela é receita para a desistência.</p>
-
-<h2>O que realmente mantém a consistência</h2>
-
-<p>Na minha experiência, alguns elementos fazem toda a diferença entre quem mantém e quem desiste:</p>
-
-<p><strong>Um programa que cabe na sua vida.</strong> De nada adianta um plano perfeito que exige cinco dias na academia se você só consegue três, ou se prefere treinar em casa. O melhor treino é aquele que você consegue sustentar. Foi pensando nisso que estruturei o programa híbrido Longevus, combinando encontros presenciais com prática domiciliar.</p>
-
-<p><strong>Progressão visível.</strong> Quando você percebe que está levantando da cadeira com mais facilidade, subindo a escada sem se cansar, dormindo melhor, isso vira combustível. Resultado concreto alimenta motivação.</p>
-
-<p><strong>Acompanhamento próximo.</strong> Ter alguém que ajusta o programa, responde dúvidas e está presente na jornada muda completamente a experiência. Você não está sozinho tentando adivinhar se está fazendo certo.</p>
-
-<p><strong>Um porquê forte.</strong> "Quero conseguir brincar com meus netos no chão e levantar sem ajuda" é um motivo que sustenta a constância muito mais do que "quero emagrecer". Quando o objetivo se conecta com a sua vida real, os dias difíceis ficam mais fáceis de atravessar.</p>
-
-<h2>Constância vence intensidade</h2>
-
-<p>Se eu pudesse deixar uma única ideia com você, seria esta: para a nossa faixa etária, treinar com constância moderada vence, de longe, treinar com intensidade esporádica. Três sessões bem feitas por semana, mantidas por meses e anos, transformam um corpo. Já uma semana puxada seguida de um mês parado não leva a lugar nenhum, exceto à frustração.</p>
-
-<p>Se você já tentou e desistiu antes, não se culpe. Provavelmente faltou o método certo, a adaptação certa e o acompanhamento certo. A boa notícia é que isso tudo pode ser construído. E o seu corpo, mesmo depois dos 50, está pronto para responder no momento em que você encontrar o caminho que funciona para você.</p>
-    </div>
-    <div class="article-cta">
-      <div class="article-cta-inner">
-        <span class="s-label">Gostou do conteúdo?</span>
-        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
-        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
-        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Por%20que%20adultos%2050%2B%20abandonam%20o%20treino%20e%20o%20que%20realmente%20mant%C3%A9m%20a%20consist%C3%AAncia%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
-        <div style="margin-top:18px;">
-          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-</div><!-- /page-artigo-consistencia -->
 
 <script>
 document.querySelectorAll('.ano').forEach(function(el){ el.textContent = new Date().getFullYear(); });
@@ -1775,6 +1189,10 @@ document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
   if (a && window.fbq) { try { fbq('track', 'Contact'); } catch(err){} }
 });
+
+// ── LINKS ANTIGOS DO BLOG (#blog, #artigo-...) levam para as páginas novas ──
+var BLOG_NOVO = {"blog": "blog/", "artigo-quedas": "blog/prevencao-de-quedas-depois-dos-60.html", "artigo-memoria": "blog/exercicio-fisico-e-memoria.html", "artigo-casa": "blog/exercicios-em-casa-depois-dos-50.html", "artigo-comorbidades": "blog/artrose-hipertensao-diabetes-como-treinar.html", "artigo-sarcopenia": "blog/sarcopenia-perda-muscular.html", "artigo-consistencia": "blog/como-manter-consistencia-no-treino-50-mais.html"};
+(function(){ var h0 = location.hash.replace('#',''); if (BLOG_NOVO[h0]) location.replace(BLOG_NOVO[h0]); })();
 
 // ── HASH ROUTING ──
 window.addEventListener('popstate', (e) => {
