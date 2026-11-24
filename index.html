@@ -21,6 +21,23 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Wellington Brito | Personal Trainer · Saúde e Longevidade">
 <meta name="twitter:description" content="Personal Longevus: treinamento para adultos 50+ em São Bernardo do Campo. Envelheça com autonomia, segurança e independência.">
+<meta name="twitter:image" content="https://britowellington.github.io/personal-longevus/wellington-foto.jpg">
+
+<!-- ── META PIXEL ──
+     Cole o ID do seu Pixel no lugar de COLE_SEU_PIXEL_ID (só números), igual ao elo60.html.
+     Enquanto o ID não for colado, nada é carregado. -->
+<script>
+  window.META_PIXEL_ID = 'COLE_SEU_PIXEL_ID';
+  if (/^\d+$/.test(window.META_PIXEL_ID)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', window.META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+</script>
 
 <!-- ── SEO: Robots e geolocalização ── -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -69,7 +86,42 @@
     "https://instagram.com/britowellington",
     "https://maps.app.goo.gl/rHMNdXkFbBv2rdjt6"
   ],
-  "hasMap": "https://maps.app.goo.gl/rHMNdXkFbBv2rdjt6"
+  "hasMap": "https://maps.app.goo.gl/rHMNdXkFbBv2rdjt6",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal trainer presencial para adultos 50+", "areaServed": "São Bernardo do Campo" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Longevus Híbrido", "description": "Encontros presenciais e programa em casa pelo app" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria online para adultos 50+" } },
+    { "@type": "Offer", "price": "49.90", "priceCurrency": "BRL", "url": "https://britowellington.github.io/personal-longevus/elo60.html", "itemOffered": { "@type": "Product", "name": "Elo 60+", "description": "Programa online de 30 dias com exercícios em casa e jogos para a memória, para quem tem 60 anos ou mais" } }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://britowellington.github.io/personal-longevus/#wellington",
+      "name": "Wellington Brito",
+      "jobTitle": "Personal Trainer · Especialista em Envelhecimento Saudável",
+      "description": "Personal trainer há mais de 15 anos, especializado em treinamento neurofuncional para adultos 50+ em São Bernardo do Campo.",
+      "worksFor": { "@id": "https://britowellington.github.io/personal-longevus/#business" },
+      "knowsAbout": ["Treinamento neurofuncional", "Envelhecimento saudável", "Prevenção de quedas", "Sarcopenia", "Exercício para idosos"],
+      "url": "https://britowellington.github.io/personal-longevus/",
+      "image": "https://britowellington.github.io/personal-longevus/wellington-foto.jpg",
+      "sameAs": ["https://instagram.com/britowellington"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tenho artrose, hipertensão ou diabetes. Posso treinar?", "acceptedAnswer": { "@type": "Answer", "text": "Pode, e deve. Na avaliação eu identifico suas condições e limitações, e o programa é montado em cima delas. Quando necessário, peço a liberação do seu médico antes de começar." } },
+        { "@type": "Question", "name": "Nunca treinei ou estou parado há anos. É para mim?", "acceptedAnswer": { "@type": "Answer", "text": "É exatamente para você. O treino começa do seu ponto de partida real, com progressão segura, sem exageros." } },
+        { "@type": "Question", "name": "Onde são os atendimentos do Wellington Brito?", "acceptedAnswer": { "@type": "Answer", "text": "Em São Bernardo do Campo e região: na Academia TEM (Nova Petrópolis), em domicílio, em condomínios e em parques. Para outras cidades, existe a consultoria online e o programa Elo 60+." } },
+        { "@type": "Question", "name": "Tem alguma opção para treinar em casa sozinho?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O Elo 60+ é um programa online para quem tem 60 anos ou mais, com treino curto em casa e um desafio para a memória todos os dias. O primeiro mês custa R$ 49,90." } },
+        { "@type": "Question", "name": "Posso contratar para meu pai ou minha mãe?", "acceptedAnswer": { "@type": "Answer", "text": "Pode. Muitas famílias me procuram assim. Você agenda a avaliação em nome deles e eu explico tudo para vocês dois." } }
+      ]
+    }
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -256,7 +308,7 @@
 
   /* ── SERVIÇOS PREVIEW ── */
   .services-preview { background: var(--cream); }
-  .srv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: var(--border); }
+  .srv-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 48px; background: var(--border); }
   .srv-card { background: var(--cream); padding: 36px 28px; border-bottom: 3px solid transparent; transition: all 0.25s; cursor: pointer; }
   .srv-card:hover { background: var(--white); border-bottom-color: var(--rust); transform: translateY(-2px); }
   .srv-icon { display: block; margin-bottom: 18px; color: var(--rust); }
@@ -669,6 +721,7 @@
       <a href="#" class="nav-link" onclick="showPage('longevus'); return false;">Longevus <span class="nav-link-badge">Programa</span></a>
       <a href="#" class="nav-link" onclick="showPage('blog'); return false;">Blog</a>
       <a href="#" class="nav-link" onclick="showPage('home'); scrollToId('sobre'); return false;">Sobre</a>
+      <a href="elo60.html" class="nav-link">Elo 60+ <span class="nav-link-badge">Online</span></a>
       <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="nav-link only-mobile">Fale comigo</a>
     </nav>
   </div>
@@ -775,6 +828,13 @@
         <p>Programa individual no app, com suporte direto comigo. Para quem está em outra cidade ou prefere treinar no próprio ritmo.</p>
         <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20na%20consultoria%20online." target="_blank" class="srv-link">Quero a consultoria →</a>
       </div>
+      <div class="srv-card" onclick="location.href='elo60.html'">
+        <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></span>
+        <span class="srv-tag">Online · 60+</span>
+        <h3>Elo 60+</h3>
+        <p>Programa de 30 dias para fazer em casa: treino curto e desafio para a memória, todos os dias. Primeiro mês por R$ 49,90.</p>
+        <a href="elo60.html" class="srv-link">Conhecer o Elo 60+ →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -843,6 +903,7 @@
       <details><summary>Tenho artrose, hipertensão ou diabetes. Posso treinar?</summary><div class="a">Pode, e deve. Na avaliação eu identifico suas condições e limitações, e o programa é montado em cima delas. Quando necessário, peço a liberação do seu médico antes de começar.</div></details>
       <details><summary>Nunca treinei ou estou parado há anos. É para mim?</summary><div class="a">É exatamente para você. O treino começa do seu ponto de partida real, com progressão segura, sem exageros.</div></details>
       <details><summary>Onde são os atendimentos?</summary><div class="a">Em São Bernardo do Campo e região: na Academia TEM (Nova Petrópolis), em domicílio, em condomínios e em parques. Para outras cidades, existe a consultoria online.</div></details>
+      <details><summary>Tem alguma opção para treinar em casa sozinho?</summary><div class="a">Tem. O <a href="elo60.html" style="color:var(--rust);">Elo 60+</a> é um programa online para quem tem 60 anos ou mais, com treino curto em casa e um desafio para a memória todos os dias. O primeiro mês custa R$ 49,90.</div></details>
       <details><summary>Quanto custa?</summary><div class="a">Depende do formato e da frequência. Me chama no WhatsApp que eu te passo as opções e os valores, incluindo a avaliação física, e você decide com calma.</div></details>
       <details><summary>Posso contratar para meu pai ou minha mãe?</summary><div class="a">Pode. Muitas famílias me procuram assim. Você agenda a avaliação em nome deles e eu explico tudo para vocês dois.</div></details>
     </div>
@@ -1708,6 +1769,12 @@ function initReveal() {
   reveals.forEach(el => observer.observe(el));
 }
 initReveal();
+
+// ── PIXEL: conta cliques no WhatsApp como "Contato" ──
+document.addEventListener('click', function(e){
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+  if (a && window.fbq) { try { fbq('track', 'Contact'); } catch(err){} }
+});
 
 // ── HASH ROUTING ──
 window.addEventListener('popstate', (e) => {
