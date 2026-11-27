@@ -121,6 +121,7 @@
     --muted: #8C7B6E; --border: #DDD5C5;
   }
   html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 80px; }
   body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--dark); overflow-x: hidden; }
 
   /* ── NAV ── */
@@ -704,10 +705,10 @@
   <div class="nav-left">
     <img src="logo-wellington.png" alt="Wellington Brito Personal Trainer" class="nav-logo-img">
     <nav class="nav-links" id="nav-links">
-      <a href="#" class="nav-link active" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" class="nav-link" onclick="showPage('longevus'); return false;">Longevus <span class="nav-link-badge">Programa</span></a>
+      <a href="./" class="nav-link active">Início</a>
+      <a href="longevus.html" class="nav-link">Longevus <span class="nav-link-badge">Programa</span></a>
       <a href="blog/" class="nav-link">Blog</a>
-      <a href="#" class="nav-link" onclick="showPage('home'); scrollToId('sobre'); return false;">Sobre</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
       <a href="elo60.html" class="nav-link">Elo 60+ <span class="nav-link-badge">Online</span></a>
       <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="nav-link only-mobile">Fale comigo</a>
     </nav>
@@ -735,7 +736,7 @@
     </p>
     <div class="hero-actions">
       <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20começar%20a%20treinar%20com%20você." target="_blank" class="btn-primary">Quero começar</a>
-      <a href="#" onclick="scrollToId('como-funciona'); return false;" class="btn-secondary">Como funciona</a>
+      <a href="#como-funciona" class="btn-secondary">Como funciona</a>
     </div>
     <p class="reply-note">Respondo pessoalmente pelo WhatsApp.</p>
     <div class="hero-stats">
@@ -806,7 +807,7 @@
         <h3>Longevus Híbrido</h3>
         <p>Encontros presenciais comigo e, nos outros dias, um programa estruturado para fazer em casa pelo app.</p>
         <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20Longevus%20Híbrido." target="_blank" class="srv-link">Quero o Híbrido →</a>
-        <a href="#" onclick="showPage('longevus'); return false;" class="srv-gift">Conhecer o programa</a>
+        <a href="longevus.html" class="srv-gift">Conhecer o programa</a>
       </div>
       <div class="srv-card">
         <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></span>
@@ -926,8 +927,8 @@
   <div class="footer-left">
     <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
     <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="./">Início</a>
+      <a href="longevus.html">Longevus</a>
       <a href="blog/">Blog</a>
     </div>
   </div>
@@ -936,245 +937,10 @@
 
 </div><!-- /page-home -->
 
-<!-- ══════════════════════════════════════ -->
-<!--  PÁGINA LONGEVUS                      -->
-<!-- ══════════════════════════════════════ -->
-<div class="page" id="page-longevus">
-
-<section class="longevus-hero">
-  <div class="hero-left">
-    <img src="logo-longevus.png" alt="Longevus - Envelhecimento Saudável" class="longevus-brand-logo">
-    <span class="hero-eyebrow">Programa Híbrido · Neurofuncional 50+</span>
-    <h1 class="hero-title">Acompanhamento <em>presencial.</em><br>Prática no seu lar.</h1>
-    <p class="hero-desc">
-      Um programa estruturado que combina <strong>encontros presenciais</strong> com Wellington e um protocolo domiciliar, guiado de exercícios físicos e cognitivos para quem quer resultado clínico real com a praticidade do dia a dia.
-    </p>
-    <div class="hero-actions">
-      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Tenho%20interesse%20no%20Programa%20Híbrido%20Longevus%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary">Quero iniciar o programa</a>
-      <a href="#longevus-como-funciona" class="btn-secondary">Como funciona</a>
-    </div>
-    <div class="hero-stats">
-      <div><span class="stat-num">15+</span><span class="stat-label">Anos de experiência</span></div>
-      <div><span class="stat-num">50+</span><span class="stat-label">Público especializado</span></div>
-    </div>
-  </div>
-  <div class="hero-right" style="background:#1C1812; position:relative; min-height:420px;">
-    <img src="wellington-foto.jpg" alt="Wellington Brito conduzindo o programa Longevus" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
-    <div class="hero-hybrid-badge">Programa Híbrido</div>
-    <div class="hero-photo-caption">
-      <span class="hero-photo-name">Wellington Brito</span>
-      <span class="hero-photo-role">Especialista em Envelhecimento Saudável · São Bernardo do Campo</span>
-    </div>
-  </div>
-</section>
-
-<div class="divider-strip">
-  <div class="divider-item">Avaliação Neurofuncional</div>
-  <div class="divider-item">Encontro Mensal Presencial</div>
-  <div class="divider-item">Protocolo Domiciliar</div>
-  <div class="divider-item">Acompanhamento Contínuo</div>
-  <div class="divider-item">Resultados Mensuráveis</div>
-</div>
-
-<!-- PARA QUEM É -->
-<section class="for-who" id="longevus-sobre">
-  <div class="container">
-    <div class="reveal">
-      <span class="s-label">Para quem é</span>
-      <h2 class="s-title">Para quem quer <em>mais</em><br>sem abrir mão da rotina.</h2>
-    </div>
-    <div class="for-who-grid">
-      <div class="reveal">
-        <p class="fw-lead">O programa híbrido Longevus foi criado para adultos acima de 50 anos que precisam de acompanhamento especializado, mas não têm disponibilidade para treinar presencialmente todos os dias da semana.</p>
-        <blockquote class="fw-quote">"Encontros mensais com o Wellington e os demais dias em casa com um programa real, estruturado e seguro."</blockquote>
-      </div>
-      <div class="signs reveal">
-        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Tem agenda cheia</strong> e não consegue se comprometer com sessões frequentes</div></div>
-        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Prefere treinar em casa</strong> na maior parte dos dias, mas quer supervisão clínica regular</div></div>
-        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Sente queda na memória</strong>, equilíbrio ou disposição e quer uma intervenção com rigor clínico</div></div>
-        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Tem comorbidades</strong> e precisa de exercício prescrito, não de academia genérica</div></div>
-        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Quer envelhecer com autonomia</strong> e procura um método que una corpo e mente de forma integrada</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="how" id="longevus-como-funciona">
-  <div class="container">
-    <div class="reveal">
-      <span class="s-label">Estrutura do programa</span>
-      <h2 class="s-title">Como o programa<br><em>híbrido</em> funciona</h2>
-      <p class="s-body">Cada etapa foi desenhada para garantir progressão segura, continuidade do estímulo e evolução mensurável.</p>
-    </div>
-    <div class="how-grid">
-      <div class="h-card reveal">
-        <span class="h-freq">Início Obrigatório</span>
-        <h3>Avaliação Inicial</h3>
-        <p>Sessão presencial com anamnese completa e avaliação neurofuncional para entender seu perfil clínico e construir o protocolo correto.</p>
-        <ul class="h-list">
-          <li>Anamnese clínica detalhada</li>
-          <li>Avaliação funcional e neurocognitiva</li>
-          <li>Identificação de comorbidades e limitações</li>
-          <li>Definição de objetivos e metas reais</li>
-        </ul>
-        <span class="h-num">01</span>
-      </div>
-      <div class="h-card reveal">
-        <span class="h-freq">A cada 15 dias · Presencial</span>
-        <h3>Encontro Mensal</h3>
-        <p>Sessão presencial com Wellington para aplicação do protocolo, reavaliação do progresso, ajustes do programa e aprofundamento dos estímulos neurocognitivos.</p>
-        <ul class="h-list">
-          <li>Execução supervisionada do protocolo</li>
-          <li>Avaliação de progressão e recalibração</li>
-          <li>Estímulos neurocognitivos integrados</li>
-          <li>Escuta ativa e vínculo terapêutico</li>
-        </ul>
-        <span class="h-num">02</span>
-      </div>
-      <div class="h-card reveal">
-        <span class="h-freq">Demais dias · Domiciliar</span>
-        <h3>Programa em Casa</h3>
-        <p>Entre os encontros presenciais, você executa um programa prescrito individualmente com exercícios de força e estímulos cognitivos para prática autônoma e segura.</p>
-        <ul class="h-list">
-          <li>Exercícios de força adaptados ao perfil clínico</li>
-          <li>Estímulos neurocognitivos para realizar sozinho</li>
-          <li>Execução autônoma, segura e progressiva</li>
-          <li>Suporte via WhatsApp com Wellington</li>
-        </ul>
-        <span class="h-num">03</span>
-      </div>
-      <div class="h-card reveal">
-        <span class="h-freq">Contínuo · Ao longo do programa</span>
-        <h3>Monitoramento e Evolução</h3>
-        <p>Wellington acompanha sua trajetória de forma contínua, ajustando o protocolo domiciliar e a intensidade dos encontros conforme sua evolução clínica.</p>
-        <ul class="h-list">
-          <li>Revisão periódica dos objetivos</li>
-          <li>Atualização do protocolo domiciliar</li>
-          <li>Canal direto para dúvidas no dia a dia</li>
-          <li>Relatório de evolução funcional</li>
-        </ul>
-        <span class="h-num">04</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- METODOLOGIA -->
-<section class="methodology">
-  <div class="container">
-    <div class="reveal">
-      <span class="s-label">Metodologia</span>
-      <h2 class="s-title">Um método que <em>integra</em><br>corpo e mente.</h2>
-    </div>
-    <div class="method-grid">
-      <div class="reveal">
-        <blockquote class="method-quote">"Não basta exercitar o corpo é preciso estimular o cérebro ao mesmo tempo. É aí que mora a diferença entre envelhecer e envelhecer bem."</blockquote>
-        <p class="method-body">O programa Longevus é fundamentado na integração entre treinamento neurofuncional e estimulação cognitiva. Cada sessão e cada exercício domiciliar são desenhados para trabalhar força, equilíbrio, coordenação e funções cognitivas de forma simultânea e progressiva.</p>
-      </div>
-      <div class="method-pillars reveal">
-        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></span><div><div class="pillar-title">Estimulação Neurocognitiva</div><div class="pillar-text">Exercícios que desafiam memória de trabalho, atenção dividida e velocidade de processamento integrados ao movimento físico.</div></div></div>
-        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7v10"/><path d="M17.5 7v10"/><line x1="6.5" y1="12" x2="17.5" y2="12"/><path d="M3.5 9.5v5"/><path d="M20.5 9.5v5"/></svg></span><div><div class="pillar-title">Força e Funcionalidade</div><div class="pillar-text">Protocolo progressivo de força muscular adaptado ao perfil clínico, com foco em autonomia e prevenção de quedas.</div></div></div>
-        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></span><div><div class="pillar-title">Equilíbrio e Marcha</div><div class="pillar-text">Treinamento específico de equilíbrio estático e dinâmico para segurança nas atividades do dia a dia.</div></div></div>
-        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="1.5"/><path d="M9 4V3a3 3 0 016 0v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></span><div><div class="pillar-title">Protocolo Individualizado</div><div class="pillar-text">Cada programa é construído do zero para o perfil do aluno, sem receitas genéricas.</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section class="results" id="longevus-resultados">
-  <div class="container">
-    <div class="results-top reveal">
-      <div>
-        <span class="s-label">O que você conquista</span>
-        <h2 class="s-title">Resultados <em>reais,</em><br>mensuráveis.</h2>
-      </div>
-      <p class="s-body">O programa híbrido Longevus produz transformações concretas e progressivas na sua capacidade funcional, cognitiva e qualidade de vida.</p>
-    </div>
-    <div class="r-grid">
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="5" r="1.6"/><path d="M13 9l-3 2 1 4"/><path d="M11 15l-2 5"/><path d="M12 13l3 2 1 4"/><path d="M10 11L6 10"/><path d="M13 9l4 1"/></svg></span><h4>Força e Mobilidade</h4><p>Recuperação e manutenção da capacidade funcional para as atividades do dia a dia com segurança e independência.</p></div>
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></span><h4>Clareza Mental</h4><p>Melhora mensurável de memória, atenção e velocidade de processamento cognitivo ao longo do programa.</p></div>
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></span><h4>Equilíbrio e Marcha</h4><p>Redução do risco de quedas com protocolos específicos de equilíbrio e coordenação neuromuscular.</p></div>
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 119.5 4a6.5 6.5 0 0010.5 10.5z"/></svg></span><h4>Qualidade de Sono</h4><p>Melhora do padrão de sono e recuperação por meio da regulação neuroendócrina promovida pelo exercício.</p></div>
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0112 7a3.5 3.5 0 017 3.5c0 5-7 9.5-7 9.5z"/><path d="M5 12h3l1.5-3 2 5 1.5-2h6"/></svg></span><h4>Saúde Cardiovascular</h4><p>Controle de pressão, glicemia e colesterol com exercício prescrito de acordo com o perfil clínico individual.</p></div>
-      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20c0-7 5-13 14-15-1 10-6 15-14 15z"/><path d="M5 20c2-5 5-8 9-10"/></svg></span><h4>Autonomia Plena</h4><p>Envelhecer com dignidade, independência e confiança. O resultado mais importante de todo o processo.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE WELLINGTON (curto - dark) -->
-<section class="about-dark about-dark-compact">
-  <div class="container">
-    <div class="about-compact-grid">
-      <div class="about-compact-photo reveal">
-        <img src="wellington-foto.jpg" alt="Wellington Brito, especialista em envelhecimento saudável" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(15%);">
-        <div class="about-photo-frame"></div>
-      </div>
-      <div class="reveal">
-        <span class="s-label">Quem conduz o programa</span>
-        <div class="about-statement">
-          <p>"O programa híbrido nasceu da observação clínica: <strong>a maioria dos resultados reais acontece entre os encontros</strong>, com o protocolo certo, prescrito por quem entende do seu perfil."</p>
-        </div>
-        <p class="about-compact-sign">Wellington Brito · Especialista em Envelhecimento Saudável e Treinamento Neurofuncional</p>
-        <a href="#" onclick="showPage('home'); scrollToId('sobre'); return false;" class="about-compact-link">Conheça a trajetória completa de Wellington →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA LONGEVUS -->
-<section class="cta-final" id="longevus-consulta">
-  <span class="s-label">Dê o primeiro passo</span>
-  <h2 class="cta-final-title">Presença que transforma.<br><em>Autonomia que liberta.</em></h2>
-  <p class="cta-final-body">Uma conversa com Wellington é suficiente para entender se o programa híbrido é o que você está buscando.</p>
-  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Tenho%20interesse%20no%20Programa%20Híbrido%20Longevus%20e%20gostaria%20de%20agendar%20minha%20avaliação%20inicial." target="_blank" class="cta-final-btn">Agendar minha avaliação inicial</a>
-  <p class="cta-note">Protocolo individualizado · Encontros mensais presenciais · Programa domiciliar estruturado</p>
-</section>
-
-<footer>
-  <div class="footer-left">
-    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
-    <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Início</a>
-      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
-      <a href="blog/">Blog</a>
-    </div>
-  </div>
-  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
-</footer>
-
-</div><!-- /page-longevus -->
-
 
 
 <script>
 document.querySelectorAll('.ano').forEach(function(el){ el.textContent = new Date().getFullYear(); });
-
-// ── ROTEAMENTO SPA ──
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  var target = document.getElementById('page-' + name);
-  if (!target) { name = 'home'; target = document.getElementById('page-home'); }
-  target.classList.add('active');
-  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-  var map = {'home': 0, 'longevus': 1, 'blog': 2};
-  // Artigos destacam o "Blog" na navbar
-  var navKey = name.indexOf('artigo-') === 0 ? 'blog' : name;
-  var links = document.querySelectorAll('.nav-link');
-  if (links[map[navKey]] !== undefined && links[map[navKey]]) links[map[navKey]].classList.add('active');
-  window.scrollTo(0, 0);
-  document.getElementById('nav-links').classList.remove('open');
-  initReveal();
-  try { history.pushState({page: name}, '', '#' + name); } catch (e) { try { location.hash = name; } catch(e2){} }
-}
-
-function scrollToId(id) {
-  setTimeout(() => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
-  }, 100);
-}
 
 // ── MENU MOBILE ──
 function toggleMenu() {
@@ -1183,7 +949,7 @@ function toggleMenu() {
 
 // ── SCROLL REVEAL ──
 function initReveal() {
-  const reveals = document.querySelectorAll('.page.active .reveal:not(.visible)');
+  const reveals = document.querySelectorAll('.reveal:not(.visible)');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
@@ -1197,16 +963,13 @@ document.addEventListener('click', function(e){
   if (a && window.fbq) { try { fbq('track', 'Contact'); } catch(err){} }
 });
 
+// ── LINKS ANTIGOS (#longevus) levam para a página própria ──
+if (location.hash === '#longevus') location.replace('longevus.html');
+
 // ── LINKS ANTIGOS DO BLOG (#blog, #artigo-...) levam para as páginas novas ──
 var BLOG_NOVO = {"blog": "blog/", "artigo-quedas": "blog/prevencao-de-quedas-depois-dos-60.html", "artigo-memoria": "blog/exercicio-fisico-e-memoria.html", "artigo-casa": "blog/exercicios-em-casa-depois-dos-50.html", "artigo-comorbidades": "blog/artrose-hipertensao-diabetes-como-treinar.html", "artigo-sarcopenia": "blog/sarcopenia-perda-muscular.html", "artigo-consistencia": "blog/como-manter-consistencia-no-treino-50-mais.html"};
 (function(){ var h0 = location.hash.replace('#',''); if (BLOG_NOVO[h0]) location.replace(BLOG_NOVO[h0]); })();
 
-// ── HASH ROUTING ──
-window.addEventListener('popstate', (e) => {
-  if (e.state && e.state.page) showPage(e.state.page);
-});
-var hash = location.hash.replace('#', '');
-if (hash && (['home','longevus','blog'].includes(hash) || document.getElementById('page-' + hash))) showPage(hash);
 </script>
 <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20tenho%20uma%20dúvida." target="_blank" class="wa-float" aria-label="Tirar minhas dúvidas pelo WhatsApp"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Tirar minhas dúvidas</span></a>
 </body>
